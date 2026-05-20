@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kiddo · La burger que siempre quisiste comer</title>
+<meta name="description" content="Kiddo — hamburguesería clásica de menú corto. Black Angus, pan brioche del día, la cocina más rápida de Argentina. Las Cañitas · Palermo · Miami." />
+<link rel="icon" href="assets/logo.webp" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Bowlby+One&family=Pacifico&family=Archivo+Black&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-logo">
+    <img src="assets/logo.webp" alt="Kiddo" />
+    <div class="nav-logo-tag">
+      <b>Kiddo</b>
+      Buenos Aires · est. 2022
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#menu">Menú</a>
+    <a href="#historia">Historia</a>
+    <a href="#universo">Universo</a>
+    <a href="#locales">Locales</a>
+  </div>
+  <a href="#locales" class="nav-cta">Cómo llegar →</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+      <line x1="4" y1="7" x2="20" y2="7" />
+      <line x1="4" y1="13" x2="20" y2="13" />
+      <line x1="4" y1="19" x2="20" y2="19" />
+    </svg>
+  </button>
+</nav>
+
+<div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer">
+  <div class="mobile-drawer-head">
+    <img src="assets/logo.webp" alt="Kiddo" />
+    <button class="mobile-drawer-close" id="drawerClose" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="6" y1="6" x2="18" y2="18" />
+        <line x1="18" y1="6" x2="6" y2="18" />
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-drawer-links">
+    <a href="#menu" data-drawer-link>Menú <span class="arrow">→</span></a>
+    <a href="#historia" data-drawer-link>Historia <span class="arrow">→</span></a>
+    <a href="#universo" data-drawer-link>Universo <span class="arrow">→</span></a>
+    <a href="#locales" data-drawer-link>Locales <span class="arrow">→</span></a>
+  </div>
+  <div class="mobile-drawer-footer">
+    <a href="#locales" class="mobile-drawer-cta" data-drawer-link>Cómo llegar →</a>
+    <a href="#">Instagram @kiddo.arg</a>
+    <a href="#">hola@kiddo.com.ar</a>
+  </div>
+</aside>
+
+<section class="hero" id="top">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      Buenos Aires · Las Cañitas · Palermo · Miami
+    </div>
+    <h1 class="hero-title">
+      <div>LA <span class="orange">BURGER</span></div>
+      <div>QUE <span class="script">siempre</span></div>
+      <div>QUISISTE COMER.</div>
+    </h1>
+    <p class="hero-sub">
+      Hamburguesería clásica de menú corto. Black Angus, pan brioche del día, ejecutada con precisión y la cocina más rápida de Argentina. Sin delivery — solo experiencia presencial.
+    </p>
+    <div class="hero-ctas">
+      <a class="btn primary" href="#locales">Cómo llegar <span class="arrow">→</span></a>
+      <a class="btn secondary" href="#menu">Ver el menú</a>
+      <a class="btn ghost" href="#historia">Nuestra historia</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">2–3min</div>
+        <div class="hero-stat-lab">Servicio promedio</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">3</div>
+        <div class="hero-stat-lab">Burgers en menú</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">25M+</div>
+        <div class="hero-stat-lab">Views Burger Kid</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-photo-stage" id="heroStage">
+    <div class="hero-sun"></div>
+    <svg class="hero-rays" viewBox="0 0 200 200" aria-hidden="true" id="heroRays"></svg>
+    <div class="hero-photo-wrap" id="heroPhotoWrap">
+      <img class="hero-photo" src="assets/sampler.webp" alt="Sampler Kiddo: doble burger, papas y bebida" />
+    </div>
+    <div class="tag t1"><span class="swatch" style="background:#ea5e1f"></span>100% Black Angus</div>
+    <div class="tag t2"><span class="swatch" style="background:#1a4f96"></span>Pan brioche del día</div>
+    <div class="tag t3"><span class="swatch" style="background:#6aa84f"></span>Vegetales frescos</div>
+    <div class="tag t4"><span class="swatch" style="background:#ffd23f"></span>Cocina más rápida de AR</div>
+    <div class="hero-hint">
+      <span class="key">MOVÉ EL MOUSE</span> sobre la imagen
+    </div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>
+      <span class="star">★</span><span style="margin-right:30px">CLÁSICA</span>
+      <span class="star">★</span><span style="margin-right:30px">BIEN EJECUTADA</span>
+      <span class="star">★</span><span style="margin-right:30px">SIN VUELTAS</span>
+      <span class="star">★</span><span style="margin-right:30px">DESDE 2022</span>
+      <span class="star">★</span><span style="margin-right:30px">BURGER KID</span>
+      <span class="star">★</span><span style="margin-right:30px">LAS CAÑITAS</span>
+      <span class="star">★</span><span style="margin-right:30px">PALERMO</span>
+      <span class="star">★</span><span style="margin-right:30px">MIAMI</span>
+    </span>
+    <span>
+      <span class="star">★</span><span style="margin-right:30px">CLÁSICA</span>
+      <span class="star">★</span><span style="margin-right:30px">BIEN EJECUTADA</span>
+      <span class="star">★</span><span style="margin-right:30px">SIN VUELTAS</span>
+      <span class="star">★</span><span style="margin-right:30px">DESDE 2022</span>
+      <span class="star">★</span><span style="margin-right:30px">BURGER KID</span>
+      <span class="star">★</span><span style="margin-right:30px">LAS CAÑITAS</span>
+      <span class="star">★</span><span style="margin-right:30px">PALERMO</span>
+      <span class="star">★</span><span style="margin-right:30px">MIAMI</span>
+    </span>
+    <span>
+      <span class="star">★</span><span style="margin-right:30px">CLÁSICA</span>
+      <span class="star">★</span><span style="margin-right:30px">BIEN EJECUTADA</span>
+      <span class="star">★</span><span style="margin-right:30px">SIN VUELTAS</span>
+      <span class="star">★</span><span style="margin-right:30px">DESDE 2022</span>
+      <span class="star">★</span><span style="margin-right:30px">BURGER KID</span>
+      <span class="star">★</span><span style="margin-right:30px">LAS CAÑITAS</span>
+      <span class="star">★</span><span style="margin-right:30px">PALERMO</span>
+      <span class="star">★</span><span style="margin-right:30px">MIAMI</span>
+    </span>
+  </div>
+</div>
+
+<section class="menu" id="menu">
+  <div class="menu-head">
+    <div>
+      <div class="section-tag"><span class="num">02</span> · El menú</div>
+      <h2 class="section-title">
+        Menú corto.<br />
+        <span class="orange">Ejecución</span> larga.
+      </h2>
+    </div>
+    <p class="section-sub">
+      Tres burgers. Hechas mil veces. Perfeccionadas otras mil. No buscamos sorprender con ingredientes raros — buscamos que cada bocado sea exactamente el que esperabas.
+    </p>
+  </div>
+
+  <div class="menu-grid">
+    <div class="burger-card">
+      <div class="burger-card-img"><img src="assets/cheeseburger.webp" alt="Cheeseburger Kiddo" /></div>
+      <div class="burger-card-footer">
+        <div class="burger-card-meta">Simple · Cheddar · Black Angus</div>
+        <p class="burger-card-desc">El clásico inmortal. Smashed patty de Black Angus, cheddar derretido, kiddo sauce, pan brioche del día. La proporción perfecta.</p>
+        <div class="burger-card-bottom">
+          <div class="burger-card-price">$8.900</div>
+          <div class="burger-card-tag orange">Más pedida</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="burger-card">
+      <div class="burger-card-img"><img src="assets/park.webp" alt="Burger Park Kiddo" /></div>
+      <div class="burger-card-footer">
+        <div class="burger-card-meta">Doble · Cheddar · Lechuga · Tomate</div>
+        <p class="burger-card-desc">Doble smashed patty con cheddar, lechuga y tomate frescos. La completa, sin vueltas. Pensada para el que viene con hambre real.</p>
+        <div class="burger-card-bottom">
+          <div class="burger-card-price">$11.500</div>
+          <div class="burger-card-tag blue">Recomendada</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="burger-card">
+      <div class="burger-card-img"><img src="assets/melvin.webp" alt="Burger Melvin Kiddo" /></div>
+      <div class="burger-card-footer">
+        <div class="burger-card-meta">Doble · Bacon · Cheddar · Cebolla</div>
+        <p class="burger-card-desc">Doble carne, doble queso, bacon crocante ahumado, cebolla crispy y kiddo sauce. La combinación que cambió la cultura burger.</p>
+        <div class="burger-card-bottom">
+          <div class="burger-card-price">$12.900</div>
+          <div class="burger-card-tag yellow">Nueva</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-extras">
+    <div class="extra-card chiddo">
+      <div class="extra-card-img">
+        <img src="assets/chiddo.webp" alt="Chiddo — hamburguesa de pollo crocante" style="width:300px;height:200px" />
+      </div>
+      <div class="extra-card-info">
+        <div>
+          <h3>Chiddo</h3>
+          <p>Nuestra burger de pollo crocante. Pechuga rebozada hand-made, lechuga, queso y kiddo sauce.</p>
+        </div>
+        <div class="price">desde $9.500 →</div>
+      </div>
+    </div>
+
+    <div class="extra-card papas">
+      <div class="extra-card-img">
+        <img src="assets/papas.webp" alt="Papas fritas Kiddo" />
+      </div>
+      <div class="extra-card-info">
+        <div>
+          <h3>Sides</h3>
+          <p>Papas hand-cut crujientes, nuggets caseros, dips, sodas y milkshakes.</p>
+        </div>
+        <div class="price">desde $3.800 →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="historia">
+  <div class="story-head">
+    <div>
+      <div class="section-tag"><span class="num">03</span> · Nuestra historia</div>
+      <h2 class="section-title">
+        10 años obsesionados con <span class="orange">la misma</span> burger.
+      </h2>
+    </div>
+    <p class="section-sub">
+      Kiddo no nace como un local más. Nace de una década de Alejandro Roig (Burger Kid) recorriendo, fotografiando y diseccionando cada hamburguesa de Buenos Aires en su canal pionero. Es la hamburguesa que él construiría para sí mismo — y ahora la tenés vos.
+    </p>
+  </div>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot">01</div>
+      <div class="tl-year">2014</div>
+      <div class="tl-text">Alejandro Roig lanza el canal Burger Kid en YouTube. Reseña hamburguesas en BA.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">02</div>
+      <div class="tl-year">2018</div>
+      <div class="tl-text">El canal supera los 10M de views. Burger Kid se vuelve referente.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">03</div>
+      <div class="tl-year">2022</div>
+      <div class="tl-text">Agosto. Abre Kiddo en Las Cañitas. La burger soñada por fin servida en la mesa.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">04</div>
+      <div class="tl-year">2024</div>
+      <div class="tl-text">Segundo local en Palermo Soho. La hamburguesa más rápida del país.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">05</div>
+      <div class="tl-year">2026</div>
+      <div class="tl-text">Aterrizamos en Miami. La cultura burger argentina cruza el continente.</div>
+    </div>
+  </div>
+
+  <div class="founder">
+    <div class="founder-card">
+      <div class="founder-portrait">BK</div>
+      <div style="margin-top:18px;text-align:center;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--kiddo-orange);font-weight:600">
+        Alejandro Roig · Fundador
+      </div>
+    </div>
+    <div>
+      <p class="founder-quote">
+        Lo único que quería era que cuando alguien probara una Kiddo, sintiera exactamente lo que sentí la primera vez que mordí una buena hamburguesa.
+      </p>
+      <div class="founder-byline">— A.R., para Burger Kid · 2022</div>
+    </div>
+  </div>
+</section>
+
+<section class="universe" id="universo">
+  <div class="universe-head">
+    <div class="section-tag"><span class="num">04</span> · El universo Kiddo</div>
+    <h2 class="section-title">
+      Más que una burger.<br />
+      Es <span class="orange">cultura</span>.
+    </h2>
+    <p class="section-sub">
+      Kiddo es la música del local, el merch que querés tener, los viajes del fundador, los reels que te hacen reír, los eventos que te invitan. Es un universo. Bienvenido.
+    </p>
+  </div>
+
+  <div class="universe-grid">
+    <div class="u-card playlist">
+      <div>
+        <div style="font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.8;font-weight:600">♫ La playlist del local</div>
+        <h3 style="margin-top:8px">Kiddo Sounds</h3>
+        <p>Lo que suena cuando estás comiendo. Cuidadosamente curada — rock clásico, indie, britpop.</p>
+      </div>
+      <div class="playlist-tracks">
+        <div class="track-row"><div class="ix">01</div><div><div class="name">Bohemian Rhapsody</div><div class="art">Queen</div></div><div class="dur">5:55</div></div>
+        <div class="track-row"><div class="ix">02</div><div><div class="name">Smells Like Teen Spirit</div><div class="art">Nirvana</div></div><div class="dur">5:01</div></div>
+        <div class="track-row"><div class="ix">03</div><div><div class="name">Rebel Rebel</div><div class="art">David Bowie</div></div><div class="dur">4:30</div></div>
+        <div class="track-row"><div class="ix">04</div><div><div class="name">Mr. Brightside</div><div class="art">The Killers</div></div><div class="dur">3:42</div></div>
+        <div class="track-row"><div class="ix">05</div><div><div class="name">Last Nite</div><div class="art">The Strokes</div></div><div class="dur">3:18</div></div>
+        <div class="track-row"><div class="ix">06</div><div><div class="name">Where Is My Mind?</div><div class="art">Pixies</div></div><div class="dur">3:53</div></div>
+      </div>
+      <div class="u-cta">Abrir en Spotify</div>
+    </div>
+
+    <div class="u-card mascot">
+      <h3>★ Kiddo Star</h3>
+      <p>Nuestra mascota. La vas a ver en stickers, vasos, paredes y por todos lados. Si la encontrás en redes y compartís, te invitamos un café.</p>
+      <div class="u-cta">Conocé al Kiddo</div>
+    </div>
+
+    <div class="u-card merch">
+      <h3>Merch</h3>
+      <p>Chombas, remeras, gorras, vasos, llaveros. Coleccioná tu serie.</p>
+      <div class="u-cta">Ver tienda</div>
+    </div>
+
+    <div class="u-card youtube">
+      <h3>Burger Kid — El canal</h3>
+      <p>10 años, 25M+ vistas. El canal que arrancó todo. Reseñas, viajes, listas y la historia detrás de cada hamburguesa.</p>
+      <div class="u-cta">Mirar en YouTube</div>
+    </div>
+
+    <div class="u-card events">
+      <h3>Eventos</h3>
+      <p>Catering, cumpleaños, corporativos. Reservá tu evento Kiddo.</p>
+      <div class="u-cta">evento.kiddo.com.ar</div>
+    </div>
+  </div>
+</section>
+
+<section class="locations" id="locales">
+  <div class="loc-head">
+    <div class="loc-head-inner">
+      <div class="section-tag"><span class="num">05</span> · Encontranos</div>
+      <h2 class="section-title">
+        Tres locales.<br />
+        <span class="orange">Una misma burger.</span>
+      </h2>
+      <p class="section-sub">
+        Sin delivery — la experiencia Kiddo es presencial. Venite a comer; reservamos turno por orden de llegada.
+      </p>
+    </div>
+  </div>
+
+  <div class="loc-grid">
+    <div class="loc-card">
+      <div class="loc-city">Buenos Aires</div>
+      <h3 class="loc-name">Las Cañitas</h3>
+      <div class="loc-status"><span class="dot"></span>Abierto ahora</div>
+      <div class="loc-addr" style="white-space:pre-line">Av. Luis María Campos 1234
+CABA, Argentina</div>
+      <div class="loc-hours">Mar–Dom · 12:00–00:00</div>
+      <div class="loc-map">Cómo llegar →</div>
+    </div>
+
+    <div class="loc-card">
+      <div class="loc-city">Buenos Aires</div>
+      <h3 class="loc-name">Palermo Soho</h3>
+      <div class="loc-status"><span class="dot"></span>Abierto ahora</div>
+      <div class="loc-addr" style="white-space:pre-line">Honduras 4500
+CABA, Argentina</div>
+      <div class="loc-hours">Lun–Dom · 12:00–01:00</div>
+      <div class="loc-map">Cómo llegar →</div>
+    </div>
+
+    <div class="loc-card">
+      <div class="loc-city">Miami, USA</div>
+      <h3 class="loc-name">Aventura</h3>
+      <div class="loc-status"><span class="dot"></span>Abierto ahora</div>
+      <div class="loc-addr" style="white-space:pre-line">Aventura
+Miami, FL, USA</div>
+      <div class="loc-hours">Mon–Sun · 12:00–23:00</div>
+      <div class="loc-map">Cómo llegar →</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-mega">Kiddo <span class="star">★</span></div>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <img src="assets/logo.webp" alt="Kiddo" class="footer-logo-img" />
+      <p style="font-size:14px;opacity:.85;line-height:1.5;max-width:320px;margin:0">
+        Hamburguesería clásica de menú corto. Fundada por Alejandro Roig (Burger Kid), 2022.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Sitio</h4>
+      <a href="#menu">Menú</a>
+      <a href="#historia">Historia</a>
+      <a href="#universo">Universo</a>
+      <a href="#locales">Locales</a>
+    </div>
+    <div class="footer-col">
+      <h4>Comunidad</h4>
+      <a href="#">Instagram @kiddo.arg</a>
+      <a href="#">YouTube Burger Kid</a>
+      <a href="#">TikTok</a>
+      <a href="#">Spotify playlist</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <a href="#">hola@kiddo.com.ar</a>
+      <a href="#">evento.kiddo.com.ar</a>
+      <a href="#">kiddomiami.com</a>
+      <a href="#">Prensa & Colabs</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© Kiddo 2026 · Buenos Aires · Miami</div>
+    <div>Sitio diseñado con ★</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
